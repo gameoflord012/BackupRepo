@@ -6,8 +6,7 @@ for file in $"${backups[@]}"
 do
     new_name=$(echo "$file" | tr / .)
 
-    if [[ -z "${file}" && $file =~ ^# ]]; then
-	echo "fuck" "$file"
+    if [[[ -z "${file}" ] && [ $file =~ ^# ]]]; then
 	continue
     fi
     
