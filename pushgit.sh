@@ -7,6 +7,7 @@ do
     new_name=$(echo "$file" | tr / .)
 
     if [[ -z "${file}" && $file =~ ^# ]]; then
+	echo "fuck" "$file"
 	continue
     fi
     
