@@ -1,4 +1,9 @@
+# openvpn config
 /home/manhh/Desktop/SUCCU/manhhieu012.ovpn
 
 # emacs
 /home/manhh/.emacs.d/init.el
+/home/manhh/.emacs.d/config.org
+
+# tmux
+/home/manhh/.tmux.conf

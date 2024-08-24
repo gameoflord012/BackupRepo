@@ -1,5 +1,7 @@
 #!/bin/bash
 
+GIT=`which git`
+
 readarray -t backups < backup-files.txt;
 
 for file in $"${backups[@]}"
@@ -14,7 +16,6 @@ do
     cp "$file" "./$new_name"
 done
 
-GIT=`which git`
 ${GIT} add --all .
 ${GIT} commit -m "Test Commit"
 ${GIT} push
