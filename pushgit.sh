@@ -10,7 +10,7 @@ do
 	continue
     fi
     
-    echo "$new_name"
+    echo "newname: ""$new_name"
     cp "$file" "./$new_name"
 done
 
