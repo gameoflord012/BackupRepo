@@ -1,2 +1,3 @@
 /home/manhh/Desktop/SUCCU/manhhieu012.ovpn
+
 /home/manhh/.emacs.d/init.el
