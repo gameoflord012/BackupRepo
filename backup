@@ -19,5 +19,5 @@ done
 echo =========================================================================
 
 ${GIT} add --all .
-${GIT} commit -m "backup at `date +%Y%m%d%H%M%S`"
+${GIT} commit -m "backup at `date "+%Y-%m-%d %H:%M:%S"`"
 ${GIT} push
