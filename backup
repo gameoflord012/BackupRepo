@@ -16,8 +16,8 @@ do
     mkdir -p ./backup-files && cp "$file" "$new_name"
 done
 
-echo ============================================================
+echo =========================================================================
 
 ${GIT} add --all .
-${GIT} commit -m "Test Commit"
+${GIT} commit -m "backup at date +%Y%m%d%H%M%S"
 ${GIT} push
