@@ -12,7 +12,7 @@ do
     fi
     
     file=$(echo $line | sed "s|~|$HOME|" )
-    new_name=./backup-files/$(echo "$file" | tr / @)
+    new_name=./backup-files/$(echo "$file" | tr / . | tr ~ home)
     
     echo newname: "$new_name"
     mkdir -p ./backup-files && cp "$file" "$new_name"
