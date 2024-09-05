@@ -4,14 +4,14 @@ GIT=`which git`
 
 readarray -t backups < backup-files.txt;
 
-for file in $"${backups[@]}"
+for line in $"${backups[@]}"
 do
 
     if [[ -z "${file}" || "$file" =~ ^# ]]; then
 	continue
     fi
     
-    file=$(realpath "$file")
+    file=$(realpath "$line")
     new_name=./backup-files/$(echo "$file" | tr / .)
     
     echo newname: "$new_name"
