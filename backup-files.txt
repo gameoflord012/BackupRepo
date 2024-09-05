@@ -1,5 +1,5 @@
 # openvpn config
-/home/manhh/Desktop/SUCCU/manhhieu012.ovpn
+~/Desktop/SUCCU/manhhieu012.ovpn
 
 # emacs
 /home/manhh/.emacs.d/init.el
