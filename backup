@@ -7,7 +7,7 @@ readarray -t backups < backup-files.txt;
 for line in $"${backups[@]}"
 do
 
-    if [[ -z "${file}" || "$file" =~ ^# ]]; then
+    if [[ -z "${line}" || "$line" =~ ^# ]]; then
 	continue
     fi
     
