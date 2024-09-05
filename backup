@@ -6,12 +6,13 @@ readarray -t backups < backup-files.txt;
 
 for file in $"${backups[@]}"
 do
-    file=$(realpath "$file")
-    new_name=./backup-files/$(echo "$file" | tr / .)
 
     if [[ -z "${file}" || "$file" =~ ^# ]]; then
 	continue
     fi
+    
+    file=$(realpath "$file")
+    new_name=./backup-files/$(echo "$file" | tr / .)
     
     echo newname: "$new_name"
     mkdir -p ./backup-files && cp "$file" "$new_name"
