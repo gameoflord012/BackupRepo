@@ -11,7 +11,7 @@ do
 	continue
     fi
     
-    file=$(echo $line | sed "s/~/$HOME" )
+    file=$(echo $line | sed "s|~|$HOME" )
     new_name=./backup-files/$(echo "$file" | tr / .)
     
     echo newname: "$new_name"
