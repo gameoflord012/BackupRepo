@@ -13,7 +13,7 @@ do
     fi
     
     echo newname: "$new_name"
-    cp "$file" "$new_name"
+    mkdir -p ./backup-files && cp "$file" "$new_name"
 done
 
 ${GIT} add --all .
