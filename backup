@@ -11,8 +11,8 @@ do
 	continue
     fi
     
-    file=$(realpath $line)
-    new_name=./backup-files/$(echo "$file" | tr / .)
+    file=$line
+    new_name=./backup-files/$(echo "$file" | tr / . | tr ~ home)
     
     echo newname: "$new_name"
     mkdir -p ./backup-files && cp "$file" "$new_name"
