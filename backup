@@ -3,7 +3,7 @@
 GIT=`which git`
 
 readarray -t backups < backup-files.txt;
-
+echo $HOME
 for line in $"${backups[@]}"
 do
 
