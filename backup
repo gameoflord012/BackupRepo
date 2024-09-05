@@ -11,7 +11,7 @@ do
 	continue
     fi
     
-    file=$(realpath "$line")
+    file=$(realpath $line)
     new_name=./backup-files/$(echo "$file" | tr / .)
     
     echo newname: "$new_name"
