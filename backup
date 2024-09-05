@@ -16,6 +16,8 @@ do
     mkdir -p ./backup-files && cp "$file" "$new_name"
 done
 
+echo ============================================================
+
 ${GIT} add --all .
 ${GIT} commit -m "Test Commit"
 ${GIT} push
