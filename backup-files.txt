@@ -7,3 +7,4 @@
 
 # tmux
 /home/manhh/.tmux.conf
+/home/manhh/.vimrc
