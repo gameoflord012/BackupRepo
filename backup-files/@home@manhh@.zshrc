@@ -83,6 +83,7 @@ ZSH_THEME="cypher"
 
 source $ZSH/oh-my-zsh.sh
 DIR_HACK=~/Desktop/SUCCU/
+DIR_VITUALBOX="\"~/Desktop/SUCCU/'Kali Shared'\""
 FILE_BACKUP=~/Desktop/BackupRepo/backup-files.txt
 alias edit-zshrc='vi ~/.zshrc && source ~/.zshrc'
 alias edit-vimrc='vi ~/.vimrc'
