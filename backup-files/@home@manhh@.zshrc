@@ -91,6 +91,7 @@ alias edit-vimrc='vi ~/.vimrc'
 alias upd-zshrc='source ~/.zshrc'
 alias upd-vimrc='source ~/.vimrc'
 
+alias edit-backup='vi ~/Desktop/BackupRepo/backup-files.txt'
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

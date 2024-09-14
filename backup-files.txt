@@ -10,3 +10,5 @@
 /home/manhh/.vimrc
 /home/manhh/.zshrc
 /home/manhh/.bash_aliases
+
+~/Desktop/cronjobs/mv-downloads.sh
